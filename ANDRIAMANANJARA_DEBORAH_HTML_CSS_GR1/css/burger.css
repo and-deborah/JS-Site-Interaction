@@ -1,0 +1,34 @@
+.tab-ul{
+    display:flex;
+    align-items: center ;
+    justify-content : space-between;
+    padding : 35px 8%;
+    cursor: pointer;
+    
+    color: var(--main-color);
+    font-size: 26px;
+
+}
+
+.tab-active{
+    color:var(--black-txt);
+    border-bottom: 2.5px solid var(--black-txt);
+    padding-bottom: 5px;
+
+}
+
+.tab-active-light{
+    color : black ;
+    border-bottom: 2.5px solid black;
+    padding-bottom: 5px;
+}
+
+.tab-content{
+    display: none;
+
+}
+
+.active{
+    display: block;
+
+}

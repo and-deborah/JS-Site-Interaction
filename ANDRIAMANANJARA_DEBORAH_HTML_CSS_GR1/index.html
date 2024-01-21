@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenue</title>
+
+    <!-- web font-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- fichier css-->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <img class="logo" src="images/coffee_logo.png" alt="logo marque cafe">
+
+        <nav class="navigation">
+          <a class="headNav" href="index.html">Accueil</a>
+          <a class="headNav" href="menu.html">Carte</a>
+          <a class="headNav" href="infos.html">À propos</a>
+          <a class="headNav" href="form.html">S'inscrire</a>
+      </nav>
+
+        <img src="images/sun.png" id="icon" alt="sun icon to toggle light mode">
+    </header>
+
+
+
+    <!-- Main menu -->
+    <section class="home">
+
+        <div class="description">
+            <h3>Un bon café frais concocté rien que pour vous </h3>
+            <p>Idéal pour n'importe quel de vos pauses déjeûner</p>
+            <form action="menu.html">
+                <button class="bouton" type="submit">Découvrir nos cafés</button>
+        </div>
+    </section>
+
+    
+
+    <!-- Swiper -->
+    <section class="slide">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slide-brunch">
+                <div class="swiper-text">
+                  <p class="subtitle">Un petit creux ?</p>
+                  <p class="title">Choisissez parmis nos délicieuses offres</p>
+                  <form action="menu.html">
+                    <button class="bouton" type="submit">En savoir plus</button>
+                </div>
+                <img class="swiper-image" src="images/COFFEE SIDE ADD.jpg" alt="cake and coffee">
+              </div>
+
+
+              <div class="swiper-slide slide-limited">
+                <div class="swiper-text">
+                  <p class="subtitle">Limited sale</p>
+                  <p class="title">Notre formule du Nouvel An</p>
+                  <form action="menu.html">
+                    <button class="bouton" type="submit">En savoir plus</button>
+                </div>
+                <img class="swiper-image" src="images/COFFEE NEW YEAR.png" alt="coffee with new year background">
+              </div>
+
+
+              <div class="swiper-slide slide-job">
+                <div class="swiper-text">
+                  <p class="subtitle">La cafèt recrute !</p>
+                  <p class="title">Recrutement de serveurs et baristas en CDI</p>
+                  <form action="infos.html"> <!-- Ne mène pas à la bonne page, pour quelquonque raison-->
+                    <button class="bouton" type="submit">En savoir plus</button>
+                </div>
+                <img class="swiper-image" src="images/BARISTA IMAGE.jpg" alt="a barista holding coffee">
+              </div>
+
+
+              <div class="swiper-slide slide-faq">
+                <div class="swiper-text">
+                  <p class="subtitle">Une question ?</p>
+                  <p class="title">Voir qui nous sommes</p>
+                  <form action="infos.html">
+                    <button class="bouton" type="submit">En savoir plus</button>
+                </div>
+                <img class="swiper-image" src="images/coffee_infos.jpg" alt="coffee and a book">
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+    </section>
+
+
+    <!-- Liens JS -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root{
+
+    /* DARK MODE COLORS */
+    --main-color: #be875f;
+    --bg : #181818;
+    --bordure : #eee9e7 4px solid;
+    --black-txt : white;
+
+    /* LIGHT MODE COLORS */
+    --main-light: #c66c2c;
+    --bg-light : #ffffff;
+    --bordure-light : #c66c2c 4px solid;
+    --light-txt : black;
+
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+.light-mode {
+    background: var(--main-light);
+    background-color: var(--bg-light);
+    border-bottom: var(--bordure-light);
+
+
+    color: black;
+
+}
+
+#icon{
+    width: 35px;
+    cursor: pointer;
+}
+
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin : 0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+    border : none;
+    text-decoration : none;
+}
+
+html{
+    font-size : 60%;
+}
+
+body{
+    background: var(--bg);
+}
+
+.bouton{
+    background-color: var(--main-color);
+    border : none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin : 4px 2px;
+    cursor : pointer;
+    border-radius: 12px;
+}
+
+.bouton:hover{
+    letter-spacing: 2px;
+    background-color:rgb(215, 187, 136);
+    color:black
+}
+
+.header{
+    background: var(--bg);
+    display: flex;
+    align-items: center ;
+    justify-content : space-between;
+    padding : 10px 8%;
+
+    border-bottom : var(--bordure);
+}
+
+.light-header{
+    background: var(--bg-light);
+    display: flex;
+    align-items: center ;
+    justify-content : space-between;
+    padding : 10px 8%;
+
+    border-bottom : var(--bordure-light);
+}
+
+.header .logo{
+    width: 6%;
+}
+
+.headNav{
+    margin : 20px;
+    font-size: 200%;
+    color: var(--black-txt);
+}
+
+.headNavLight{
+    margin : 20px;
+    font-size: 200%;
+    color: var(--light-txt);
+}
+
+
+
+.headNav:hover{
+    color:var(--main-color);
+    border-bottom: 2.5px solid var(--main-color);
+    padding-bottom: 5px;
+}
+
+.titre{
+    text-align : center;
+    color : var(--black-txt);
+    font-size: xx-large;
+    padding :2%;
+}
+
+.titre-light{
+    text-align : center;
+    color : var(--white-txt);
+    font-size: xx-large;
+    padding :2%;
+}
+
+.titre span{
+    color : var(--main-color);
+}
+
+.intel .cadre .description span{
+    color: var(--main-color);
+}
+
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../images/coffee_home.jpg) no-repeat;
+    background-size : cover;
+    background-position: center;
+}
+
+.home .description h3{
+    max-width: 100%;
+    font-size: xx-large;
+    text-transform: uppercase;
+    color: var(--black-txt);
+
+}
+
+.home .description p{
+    font-size: x-large;
+    font-weight: lighter;
+    color: var(--black-txt);
+}
+
+section{
+    padding : 5% 5%;
+}
+
+.menu .tableau{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap : 10%;
+}
+
+.menu .tableau .cellule{
+    padding: 5%;
+    text-align : center;
+    border : var(--bordure);
+}
+
+.menu .tableau .cellule:hover{
+    background: bisque
+}
+
+.menu .tableau .cellule:hover > *{
+    color: var(--bg)
+}
+
+.menu .tableau .cellule img{
+    width: 70%;
+}
+
+.productName{
+    color: var(--black-txt);
+    font-size: large;
+}
+
+.productNameLight{
+    color: black;
+    font-size: large;
+}
+
+.menu .tableau .cellule .prix{
+    color: rgb(231, 192, 102);
+    font-size: x-large;
+}
+
+.intel .cadre{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background: rgb(40, 40, 40);
+}
+
+.intel .cadre .image{
+    flex : 1 1 500px
+}
+
+.intel .cadre .description{
+    flex : 1 1 500px
+}
+
+.intel .cadre .description h3{
+    color:var(--black-txt);
+    font-size: 500%
+}
+
+.intel-descriptionh3-light{
+    color:var(--white-txt);
+    font-size: 500%
+}
+
+.p-infos{
+    color: var(--black-txt);
+    font-size: 200%;
+    padding : 2%
+}
+
+.intel-descriptionP-light{
+    color: var(--white-txt);
+    font-size: 200%;
+    padding : 2%
+}
+
+.intel .cadre .image img{
+    width: 100%;
+    padding: 5%;
+}
+
+
+.slide{
+    position: relative;
+    height: 100%;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+  
+.swiper-slide {
+  height: 60vh;
+}
+  
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background: rgb(40, 40, 40);
+  
+  
+    padding-left: 100px;
+}
+
+
+.swiper-text{
+    flex : 1 1 500px
+}
+
+.swiper-image{
+    min-height: 20vh;
+    flex : 1 1 500px;
+    align-items: center;
+    background-size : cover;
+    background-position: center;
+}
+  
+  
+.swiper-slide img {
+    display: block;
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.subtitle{
+    color:white;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+  
+.title{
+    color: var(--main-color);
+    font-weight:bold;
+    font-size: 30px;
+}
+  
+body .swiper-button-next,
+body .swiper-button-prev {
+    color : goldenrod
+}
+
+
+
+
+
+
+/* Partie responsive*/
+
+@media all and (max-device-width: 480px)
+{
+    html{
+        font-size : 50%;
+    }
+
+    .header{
+        padding : 10px 10px;
+    }
+
+    section{
+        padding : 10px;
+    }
+
+    .home{
+        justify-content: center;
+        background-position: left;
+        text-align: center;
+    }
+    
+    .home .description h3{
+        font-size: 40px;
+    }
+    
+    .home .description p{
+        font-size: 20px;
+    }
+
+}

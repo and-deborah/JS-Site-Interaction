@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- web font-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- fichier css-->
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <img class="logo" src="images/coffee_logo.png" alt="logo marque cafe">
+
+        <nav class="navigation">
+            <a class="headNav" href="index.html">Accueil</a>
+            <a class="headNav" href="menu.html">Carte</a>
+            <a class="headNav" href="infos.html">À propos</a>
+            <a class="headNav" href="form.html">S'inscrire</a>
+        </nav>
+
+        <img src="images/sun.png" id="icon" alt="sun icon to toggle light mode">
+    </header>
+
+
+    <section class="formulaire">
+        <div class="display-message">
+            <div class="message-error">
+                <ul class="message-errorul"></ul>
+            </div>
+        
+            <div class="message-success">
+                Formulaire envoyé !
+            </div>
+        </div>
+
+
+        <div class="typing-area">
+            <form action="" method="POST" enctype="multipart/form-data">
+
+                <div>
+                    <label for="pseudo">Pseudo</label>
+                    <input type="text" name="pseudo" id="pseudo">
+                </div>
+    
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+    
+                <div>
+                    <label for="password">Mot de passe</label>
+                    <input type="password" name="password" id="password">
+                </div>
+    
+                <div>
+                    <label for="password2">Entrer à nouveau le mot de passe</label>
+                    <input type="password2" name="password2" id="password2">
+                </div>
+    
+                <button class="bouton" type="submit">S'inscrire</button>
+    
+            </form>
+        </div>
+        
+    </section>
+
+    <script src="JS/form.js"></script>
+</body>
+</html>
